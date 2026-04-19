@@ -31,5 +31,17 @@ GROUP BY p.category
 ORDER BY revenue DESC;
 
 --TASK 3:
+SELECT e.first_name, e.last_name, d.name AS department,
+       e.salary,
+       ROUND((SELECT AVG(salary) FROM employees
+              WHERE department_id = e.department_id), 2) AS dept_avg
+FROM employees e
+JOIN departments d ON e.department_id = d.id
+WHERE e.salary > (
+    SELECT AVG(salary) FROM employees
+    WHERE department_id = e.department_id
+)
+ORDER BY d.name, e.salary DESC;
+
 
 
