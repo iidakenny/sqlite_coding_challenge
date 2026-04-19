@@ -20,4 +20,5 @@
     - F. Garcia earns $91,000 vs the $89,500 average, only $1,500 above the threshold.
 
 ## Task 4: Cities with Most Loyal Customers
--
+- Tampa is the only city with Gold-level customers, and it accounts for 4 Gold-level members in total.
+- Silver and Bronze have more spread out loyalty members across Florida, but no city has more than 1 member in either category. 
