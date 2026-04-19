@@ -10,7 +10,7 @@
 - Stationery contributes the least at only $144.90...
 
 ## Task 2 Variant: Delivered Orders Only
-- The category ranking remains the same when filtering...
+- The category ranking remains the same when filtering altought revenue drops by 30-40% in all categories
 
 ## Task 3: Employees Above Department Average
 -
