@@ -43,5 +43,16 @@ WHERE e.salary > (
 )
 ORDER BY d.name, e.salary DESC;
 
+--TASK 4:
+SELECT city, SUM(CASE WHEN loyalty_level = 'Gold' THEN 1 ELSE 0 END) AS gold_customer_count
+FROM customers
+GROUP BY city
+ORDER BY gold_customer_count DESC, city ASC;
+
+--TASK 4 Extension:
+SELECT city, SUM(CASE WHEN loyalty_level = 'Gold' THEN 1 ELSE 0 END) AS Gold, SUM(CASE WHEN loyalty_level = 'Silver' THEN 1 ELSE 0 END) AS Silver, SUM(CASE WHEN loyalty_level = 'Bronze' THEN 1 ELSE 0 END) AS Bronze
+FROM customers
+GROUP BY city
+ORDER BY Gold DESC, city ASC;
 
 
